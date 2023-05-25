@@ -10,9 +10,10 @@ public class Main {
         double bmi = height / weight;
         double soma = age + height;
 
-        System.out.println("Hello, " + name + "! You are " + age + " years old and " + height + "m tall.");
+        System.out.println("Hello, " + name.toUpperCase() + "! You are " + age + " years old and " + height + "m tall.");
         System.out.println("The sum of your age and height is " + soma + ".");
         System.out.println("Your BMI is " + bmi + ".");
+        System.out.println("You are " + (age < 18 ? "not " : "") + "an adult.");
 
         if (age < 18) {
             System.out.println("You are not an adult.");
